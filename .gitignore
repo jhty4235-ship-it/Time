@@ -1,3 +1,32 @@
-# Build folder and log file
-build/
-build.log
+#include <iostream>
+using namespace std;
+class Time {
+private :
+ 
+int hour;
+int minute;
+int second ;
+  
+  public:
+  Time ( int  h,int m,int s)
+  {
+  hour = h;
+  minute = m;
+  second = s;
+  
+}
+
+void printTime()
+{
+cout << hour<< ":" <<  minute<< ":" << second <<endl;
+}
+
+  };
+
+int main()
+{
+ Time time1 (10,2,6);
+ time1.printTime();
+ 
+    return 0;
+    }
